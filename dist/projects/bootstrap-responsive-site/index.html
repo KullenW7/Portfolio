@@ -1,0 +1,166 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-bs-spy="scroll"
+  data-bs-target="#mainNav"
+  data-bs-offset="70"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Responsive Bootstrap Site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    class="bg-light text-dark"
+  >
+    <!-- Toasts (index.html or shared component) -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Welcome back! This is a toast notification.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">BootstrapSite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExample"
+      class="carousel slide pt-3"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/sample1.png"
+            class="d-block w-100"
+            alt="Sample Image 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/sample2.jpg"
+            class="d-block w-100"
+            alt="Sample Image 2"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="display-5">Welcome to Our Bootstrap Site!</h1>
+          <p class="lead">
+            We're excited to show off Bootstrap components including carousels,
+            modals, tooltips, and more. This site demonstrates responsive design
+            principles, media queries, and custom styling in addition to
+            Bootstrap's built-in utility classes.
+          </p>
+          <p>
+            Use the navbar to navigate through the pages. Try resizing your
+            browser to see how our layout adjusts automatically!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-dark">
+            <div class="card-body bg-white text-dark">
+              <h5 class="card-title">
+                Latest Update <span class="badge bg-info text-dark">New</span>
+              </h5>
+              <p class="card-text">
+                Explore new features we added to our gallery and contact pages.
+                Enjoy the new modal-based contact form!
+              </p>
+              <a href="pages/gallery.html" class="btn btn-primary"
+                >Go to Gallery</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+      &copy; 2025 BootstrapSite. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
