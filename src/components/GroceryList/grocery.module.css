@@ -1,0 +1,121 @@
+/* ✅ Grocery List Full-Page Background */
+.groceryBackground {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ✅ Grocery List Container */
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* ✅ Make background slightly transparent */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+  width: 100%;
+  max-width: 450px; /* ✅ Slightly increased width for better UI */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  backdrop-filter: blur(8px); /* ✅ Subtle blur effect for readability */
+}
+
+/* ✅ Title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+/* ✅ Input and Button Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 90%;
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* ✅ Button Styling */
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 90%;
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* ✅ Grocery List */
+.list {
+  list-style: none;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+}
+
+/* ✅ Grocery List Items */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* ✅ Slight transparency */
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* ✅ Delete Button */
+.delete-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.delete-button:hover {
+  background-color: #e43f3b;
+  transform: scale(1.05);
+}

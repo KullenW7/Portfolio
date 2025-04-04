@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website designed with accessibility in mind."
+    />
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Accessible Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/projects/accessibility-website/index.html">Home</a></li>
+          <li>
+            <a href="/projects/accessibility-website/Text_Color.html"
+              >Text and Color</a
+            >
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Images.html">Images</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/nav.html">Navigation</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Other.html"
+              >Other Practices</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="accessibility-controls">
+        <div class="text-size-controls">
+          <button data-size="16px">A</button>
+          <button data-size="18px">A</button>
+          <button data-size="20px">A</button>
+          <button data-size="22px">A</button>
+        </div>
+        <div class="color-mode-controls">
+          <button data-mode="default">🌞</button>
+          <button data-mode="high-contrast">⚫️</button>
+          <button data-mode="dark-mode">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="about">
+        <h2>Text And Color</h2>
+        <p>
+          Text and color accessibility practices ensure that digital content is
+          readable and inclusive for all users, including those with visual
+          impairments. High contrast between text and background improves
+          readability, with a minimum contrast ratio of 4.5:1 for normal text
+          and 3:1 for large text recommended by WCAG. Avoid relying solely on
+          color to convey meaning; instead, use text labels or icons. Sans-serif
+          fonts enhance legibility, and sufficient spacing between lines and
+          letters prevents strain. Providing options for users to adjust text
+          size and color settings improves accessibility. Lastly, testing with
+          screen readers and accessibility tools ensures a more inclusive
+          experience.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Accessible Web. All rights reserved.</p>
+    </footer>
+    <script src="/projects/accessibility-website/accessibility.js"></script>
+  </body>
+</html>

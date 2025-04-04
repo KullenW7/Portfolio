@@ -1,0 +1,110 @@
+/* Calculator styling */
+.calculator-card {
+  width: 320px; /* Adjust width for better fit */
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Display screen */
+.input-display {
+  text-align: right;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 4px;
+  width: 100%; /* Ensures input spans full width */
+  border: 2px solid white; /* White border for clarity */
+  color: white; /* Ensure text on screen is white */
+}
+
+/* Button grid */
+.button-grid {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 10px; /* Space between rows */
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly across each row */
+  gap: 10px; /* Space between buttons in the same row */
+}
+
+/* General button styling */
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold; /* Make text stand out */
+  background-color: #888; /* Lighter grey for visibility */
+  color: white !important; /* Force text to be bright white */
+  border: 2px solid white; /* White border for contrast */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  flex: 1; /* Allow buttons to stretch within their container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button hover and active states */
+button:hover {
+  background-color: #666; /* Darker grey on hover */
+}
+
+button:active {
+  background-color: white; /* Turns white on click */
+  color: black; /* Black text when clicked */
+}
+
+/* Number buttons */
+.number-btn {
+  background-color: #888; /* Lighter grey */
+  color: white !important;
+}
+
+.number-btn:hover {
+  background-color: #666;
+}
+
+/* Operator buttons */
+.operator-btn {
+  background-color: #888; /* Lighter grey */
+  color: white !important;
+}
+
+.operator-btn:hover {
+  background-color: #666;
+}
+
+/* Clear button (red for distinction) */
+.clear-btn {
+  background-color: red;
+  color: white !important;
+  border: 2px solid white;
+}
+
+.clear-btn:hover {
+  background-color: darkred;
+}
+
+/* Equal button (green for visibility) */
+.equal-btn {
+  flex: 2; /* Ensure equal button spans two columns */
+  background-color: green;
+  color: white !important;
+}
+
+.equal-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Zero button should span two columns */
+.zero-btn {
+  flex: 2;
+}

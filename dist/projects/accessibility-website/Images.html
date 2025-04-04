@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website designed with accessibility in mind."
+    />
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Accessible Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/projects/accessibility-website/index.html">Home</a></li>
+          <li>
+            <a href="/projects/accessibility-website/Text_Color.html"
+              >Text and Color</a
+            >
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Images.html">Images</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/nav.html">Navigation</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Other.html"
+              >Other Practices</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="accessibility-controls">
+        <div class="text-size-controls">
+          <button data-size="16px">A</button>
+          <button data-size="18px">A</button>
+          <button data-size="20px">A</button>
+          <button data-size="22px">A</button>
+        </div>
+        <div class="color-mode-controls">
+          <button data-mode="default">🌞</button>
+          <button data-mode="high-contrast">⚫️</button>
+          <button data-mode="dark-mode">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="about">
+        <h2>Images</h2>
+        <p>
+          Best image practices for accessibility ensure that visual content is
+          inclusive for users with disabilities, particularly those who rely on
+          screen readers or have visual impairments. The most crucial practice
+          is providing alternative text (alt text) for images, which describes
+          their content and purpose. Alt text should be concise yet descriptive,
+          conveying essential details without redundancy. For decorative images
+          that do not add meaningful content, using empty alt attributes
+          (alt="") prevents unnecessary distractions for screen reader users.
+          Complex images, such as charts or infographics, require detailed
+          descriptions in nearby text or linked long descriptions to ensure
+          comprehension. Contrast and color choices in images should accommodate
+          users with color blindness by not relying solely on color to convey
+          meaning; instead, use patterns, labels, or text. When using images for
+          buttons or links, ensure that the alt text communicates the action,
+          like “Search” instead of “Magnifying glass.” Scalable Vector Graphics
+          (SVGs) are ideal for maintaining clarity across different screen
+          sizes, and images should be responsive to adapt to various devices.
+          Providing captioning or transcripts for images containing text is
+          crucial, as text within images is not accessible to screen readers.
+          Lastly, testing images with accessibility tools and assistive
+          technologies helps identify areas for improvement, ensuring a more
+          inclusive web experience.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Accessible Web. All rights reserved.</p>
+    </footer>
+    <script src="/projects/accessibility-website/accessibility.js"></script>
+  </body>
+</html>
