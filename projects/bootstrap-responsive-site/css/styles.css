@@ -1,0 +1,111 @@
+/* css/styles.css */
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding-top: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ========== NAVBAR OVERRIDES ========== */
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* ========== CARD HOVER EFFECT ========== */
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== TOOLTIP OVERRIDE ========== */
+.tooltip-inner {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* ========== CUSTOM UTILITIES ========== */
+.section-padding {
+  padding: 60px 0;
+}
+
+/* ========== ACCESSIBILITY ========== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px dashed #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Overriding Bootstrap background for dark footer if needed */
+footer.bg-dark {
+  background-color: #212529 !important;
+}
+
+/* ========== BREADCRUMB OVERRIDE ========== */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #6c757d;
+  padding: 0 0.5rem;
+}
+
+/* Toast positioning for visibility */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1055;
+}

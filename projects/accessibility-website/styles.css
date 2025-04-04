@@ -1,0 +1,340 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #808080;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  background: #808080;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  transition: font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+  font-size: 1.2em;
+}
+
+main {
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #005a9c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #00447c;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+nav ul li a:focus,
+button:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+main {
+  line-height: 1.8;
+}
+
+form input,
+form textarea {
+  background-color: #fff;
+  color: #333;
+}
+
+button:focus {
+  outline: 2px solid #ffffff;
+}
+
+nav ul li a {
+  padding: 12px;
+}
+
+/* Media Queries */
+
+/* For mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    font-size: 1.1em;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+/* For tablets (max-width: 900px) */
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 1em 2em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  button {
+    padding: 12px 18px;
+  }
+}
+
+/* For large screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 2em;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  button {
+    padding: 15px 20px;
+  }
+}
+
+/* Hover effect on nav links */
+nav ul li a:hover {
+  background-color: #444;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background: #00447c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Smooth scroll for the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav bar active state */
+nav ul li a:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* Add a subtle shadow to the header */
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in effect for main content */
+main {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover effect for form inputs */
+form input:hover,
+form textarea:hover {
+  border-color: #005a9c;
+  background-color: #f0f8ff;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for form input focus */
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #005a9c;
+  box-shadow: 0 0 8px rgba(0, 90, 156, 0.5);
+}
+
+/* Button with a subtle transition */
+button {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Drop-down menu effect */
+nav ul li a + ul {
+  display: none;
+  position: absolute;
+  background-color: #808080;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover a + ul {
+  display: block;
+  animation: fadeInDropdown 0.3s ease;
+}
+
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ensure the whole page takes up at least the full viewport height */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Allow the main content to grow and push the footer down */
+main {
+  flex-grow: 1;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  margin-top: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#accessibility-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.text-size-controls button,
+.color-mode-controls button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.text-size-controls button:hover,
+.color-mode-controls button:hover {
+  background: #bbb;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+.high-contrast a {
+  color: cyan;
+}
+.high-contrast button {
+  background: yellow;
+  color: black;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark-mode a {
+  color: #bb86fc;
+}
+.dark-mode button {
+  background: #3700b3;
+  color: white;
+}

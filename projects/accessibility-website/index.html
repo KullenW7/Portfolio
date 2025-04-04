@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website designed with accessibility in mind."
+    />
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Accessible Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/projects/accessibility-website/index.html">Home</a></li>
+          <li>
+            <a href="/projects/accessibility-website/Text_Color.html"
+              >Text and Color</a
+            >
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Images.html">Images</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/nav.html">Navigation</a>
+          </li>
+          <li>
+            <a href="/projects/accessibility-website/Other.html"
+              >Other Practices</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="accessibility-controls">
+        <div class="text-size-controls">
+          <button data-size="16px">A</button>
+          <button data-size="18px">A</button>
+          <button data-size="20px">A</button>
+          <button data-size="22px">A</button>
+        </div>
+        <div class="color-mode-controls">
+          <button data-mode="default">🌞</button>
+          <button data-mode="high-contrast">⚫️</button>
+          <button data-mode="dark-mode">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="about">
+        <h2>Overview</h2>
+        <p>
+          Accessibility practices are essential for ensuring that digital
+          content is usable by all individuals, regardless of their abilities or
+          disabilities. These practices focus on designing websites,
+          applications, and digital content in ways that accommodate a wide
+          range of users, including those with visual, auditory, motor, and
+          cognitive impairments. Key principles of accessibility include
+          providing text alternatives for non-text content, ensuring that
+          content is navigable with a keyboard, offering clear and concise
+          information, and using proper color contrast for readability.
+          Additional best practices involve providing captions for multimedia,
+          designing adaptable layouts for various devices, and ensuring
+          compatibility with assistive technologies like screen readers. By
+          following accessibility guidelines, designers can create more
+          inclusive and user-friendly experiences that are accessible to
+          everyone, promoting equal access to information and services.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Accessible Web. All rights reserved.</p>
+    </footer>
+    <script src="/projects/accessibility-website/accessibility.js"></script>
+  </body>
+</html>
